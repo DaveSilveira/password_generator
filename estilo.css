@@ -1,0 +1,17 @@
+body{
+	background-color: #000000;
+	color: #00FF00;
+	font-family: Terminal;
+}
+#corpo{
+	border: 2px double #00FF00;
+	margin-left: 30%;
+	margin-top: 10%;
+	width: 40%;
+	height: 60%;
+	padding: 2%;
+}
+#check{
+	background-color: #000000;
+	color: #00FF00;
+}
