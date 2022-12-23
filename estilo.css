@@ -1,17 +1,52 @@
 body{
 	background-color: #000000;
 	color: #00FF00;
-	font-family: Terminal;
+	font-family: sans-serif;
+	text-align: center;
 }
-#corpo{
-	border: 2px double #00FF00;
-	margin-left: 30%;
-	margin-top: 10%;
-	width: 40%;
-	height: 60%;
-	padding: 2%;
+#cabecalho{
+	width:90%;
+	margin: auto;
+	margin-top: 0.5%;
+	border: 1px solid #00FF00;
+
 }
-#check{
-	background-color: #000000;
-	color: #00FF00;
+#conteudo{
+	margin: auto;
+	width:90%;
+	margin-top: 0.5%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	border: 1px solid #00FF00;
+	height:70%;
+}
+#rodape{
+	margin: auto;
+	margin-top:0.5%;
+	height:10%;
+	width:90%;
+	border: 1px solid #00ff00;	
+}
+#btn{
+	margin: auto;
+	background-color:#000000;
+	color:#00ff00;
+	border:1px solid #00FF00;
+	width:80px;
+	height:40px;
+	font-size:16pt;
+	margin-bottom: 10px;
+}
+#recebe{
+	background-color:#000000;
+	color:#00ff00;
+	font-size:16pt;
+	border:1px solid #00FF00;
+	width:200px;
+	height:40px;
+	margin-bottom:2%;
+}
+.check{
+	margin-bottom: 2%;
+	position: relative;
 }
