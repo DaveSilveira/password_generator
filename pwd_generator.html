@@ -1,4 +1,4 @@
-<html>
+<!DOCTYPE html>
 <head><title>Password Generator</title>
 <link rel="stylesheet" type="text/css" href="estilo.css" />
 </head>
@@ -10,21 +10,17 @@
 
 <section id="conteudo">
 	<input type="text" id="recebe" value=""></br>
-	<input type="checkbox" class="check" id="mai"><label>MAIUSCULAS</label><br>
-	<input type="checkbox" class="check" id="min"><label>minusculas</label><br>
-	<input type="checkbox" class="check" id="num"><label>Núm3r05</label><br>
-	<input type="checkbox" class="check" id="simb"><label>$!mb#l#$</label><br>
+	<input type="checkbox" class="check" id="mai" name="mai"><label for="mai">MAIUSCULAS</label><br>
+	<input type="checkbox" class="check" id="min" name="min"><label for="min">minusculas</label><br>
+	<input type="checkbox" class="check" id="num" name="num"><label for="num">Núm3r05</label><br>
+	<input type="checkbox" class="check" id="simb" name="simb"><label for="simb">$!mb#l#$</label><br>
 	
-	<input type="button" id="btn" value="Gerar" onclick="gerar()">
+	<button id="btn">Gerar</button>
 </section>
 
 <section id="rodape">
 	
 </section>
-
-
-
-
-
+<script src="script.js"></script>
 </body>
 </html>

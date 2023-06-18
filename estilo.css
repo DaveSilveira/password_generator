@@ -36,6 +36,7 @@ body{
 	height:40px;
 	font-size:16pt;
 	margin-bottom: 10px;
+	cursor: pointer;
 }
 #recebe{
 	background-color:#000000;
@@ -49,4 +50,5 @@ body{
 .check{
 	margin-bottom: 2%;
 	position: relative;
+	cursor: pointer;
 }
