@@ -1,20 +1,26 @@
 
-const recebe = document.getElementById('recebe');
-const gerar = document.querySelector('#btn');
-const maiuscula = document.getElementById('mai');
-const minuscula = document.getElementById('min');
-const numeros = document.getElementById('num');
-const simbolos = document.getElementById('simb');
+const recebe = document.getElementById('recebe')
+const caracteres = document.querySelector('#caracteres')
+const gerar = document.querySelector('#btn')
+const maiuscula = document.getElementById('mai')
+const minuscula = document.getElementById('min')
+const numeros = document.getElementById('num')
+const simbolos = document.getElementById('simb')
 
-const sim = ['!', '@', '#', '$', '%', ',', '.', '&', '*', '(', ')', '[', ']', '{', '}', '~', '^', '+', '=']
-const num = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-const min = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'x', 'y', 'w', 'z']
-const mai = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'X', 'Y', 'W', 'Z']
+const sim = '!@#$%&*()_+<>,./|\;:'
+const num = '0123456789'
+const min = 'abcdefghijklmnopqrstuvxywz'
+const mai = 'ABCDEFGHIJKLMNOPQRSTUVXYWZ'
+
+let psw = caracteres.value;
+let senha = 'teste';
 
 gerar.addEventListener('click', function(){
 
-if(maiuscula.checked){
-    alert('teste')
+for(let i = 0; i < psw.lenght; i++){
+    let senhaAleatoria = Math.floor(Math.random() * sim.length)
+    senha = sim.substring(senhaAleatoria, senhaAleatoria + 1)
 }
-
+recebe.placeholder = senha //resultado
 });
+
