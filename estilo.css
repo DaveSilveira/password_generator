@@ -43,9 +43,10 @@ body{
 	color:#00ff00;
 	font-size:16pt;
 	border:1px solid #00FF00;
-	width:200px;
+	width:250px;
 	height:40px;
-	margin-bottom:2%;
+	margin: auto;
+	padding-top: 4px;
 }
 .check{
 	margin-bottom: 2%;

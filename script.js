@@ -7,20 +7,19 @@ const minuscula = document.getElementById('min')
 const numeros = document.getElementById('num')
 const simbolos = document.getElementById('simb')
 
-const sim = '!@#$%&*()_+<>,./|\;:'
+const sim = '!@#$%&*()_+<>,./|:'
 const num = '0123456789'
 const min = 'abcdefghijklmnopqrstuvxywz'
 const mai = 'ABCDEFGHIJKLMNOPQRSTUVXYWZ'
 
-let psw = caracteres.value;
-let senha = 'teste';
-
 gerar.addEventListener('click', function(){
-
-for(let i = 0; i < psw.lenght; i++){
-    let senhaAleatoria = Math.floor(Math.random() * sim.length)
-    senha = sim.substring(senhaAleatoria, senhaAleatoria + 1)
+    let senha;
+    
+for(let i = 1; i < caracteres.value; i++){
+    let senhaAleatoria = Math.floor(Math.random() * num.length)
+    senha += num.charAt(senhaAleatoria)
+    recebe.textContent = senha 
+    console.log(senha)
 }
-recebe.placeholder = senha //resultado
 });
 
