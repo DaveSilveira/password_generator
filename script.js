@@ -7,19 +7,25 @@ const minuscula = document.getElementById('min')
 const numeros = document.getElementById('num')
 const simbolos = document.getElementById('simb')
 
-const sim = '!@#$%&*()_+<>,./|:'
-const num = '0123456789'
-const min = 'abcdefghijklmnopqrstuvxywz'
-const mai = 'ABCDEFGHIJKLMNOPQRSTUVXYWZ'
+const sim = '!@#$%&*()_+<>,./|:';
+const num = '0123456789';
+const min = 'abcdefghijklmnopqrstuvxywz';
+const mai = 'ABCDEFGHIJKLMNOPQRSTUVXYWZ';
 
-function detect2(x, y){
-        let checks = x + y
-       return geraSenha(checks)
+function detect2(x, y){ 
+    let checks = x + y; 
+    return geraSenha(checks)
 }
-
-
+function detect3(x, y, z){
+    let checks = x + y + z;
+    return geraSenha(checks)
+}
+function detect4(x, y, w, z){
+    let checks = x + y + w +z;
+    return geraSenha(checks)
+}
 function geraSenha(x){
-    let senha;
+    let senha = '';
     for(let i = 0; i < caracteres.value; i++){
         let senhaAleatoria = Math.floor(Math.random() * x.length)
         senha += x.charAt(senhaAleatoria)
@@ -39,13 +45,12 @@ gerar.addEventListener('click', function(){
     if(minuscula.checked && numeros.checked) detect2(min, num)
     if(minuscula.checked && simbolos.checked) detect2(min, sim)
     if(numeros.checked && simbolos.checked) detect2(num, sim)
-    if(maiuscula.checked && minuscula.checked && simbolos.checked)
-    if(maiuscula.checked && minuscula.checked && numeros.checked)
-    if(maiuscula.checked && simbolos.checked && numeros.checked)
-    if(minuscula.checked && simbolos.checked && numeros.checked)
+    if(maiuscula.checked && minuscula.checked && simbolos.checked) detect3(mai, min, sim)
+    if(maiuscula.checked && minuscula.checked && numeros.checked)   detect3(mai, min, num)
+    if(maiuscula.checked && simbolos.checked && numeros.checked) detect3(mai, sim, num)
+    if(minuscula.checked && simbolos.checked && numeros.checked) detect3(min, sim, num)
 // verificar ultima condicional
-
-    if(maiuscula.checked && minuscula.checked && simbolos.checked && numeros.checked);
+    if(maiuscula.checked && minuscula.checked && simbolos.checked && numeros.checked) detect4(mai, min, sim, num)
 
 });
 
