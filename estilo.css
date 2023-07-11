@@ -48,8 +48,13 @@ body{
 	margin: auto;
 	padding-top: 4px;
 }
+.checks{
+	width: 130px;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: left;
+}
 .check{
-	margin-bottom: 2%;
-	position: relative;
-	cursor: pointer;
+	margin-left: 2px;
 }

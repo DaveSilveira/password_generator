@@ -51,6 +51,4 @@ gerar.addEventListener('click', function(){
     if(minuscula.checked && simbolos.checked && numeros.checked) detect3(min, sim, num)
 // verificar ultima condicional
     if(maiuscula.checked && minuscula.checked && simbolos.checked && numeros.checked) detect4(mai, min, sim, num)
-
 });
-
